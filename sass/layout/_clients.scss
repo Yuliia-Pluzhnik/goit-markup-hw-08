@@ -1,0 +1,41 @@
+.clients__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.clients__item {
+    flex-basis: calc((100% - 150px) / 6);
+}
+
+.cliets__logo {
+    fill: var(--icon-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-color: var(--icon-color);
+    border-radius: 4px;
+    height: 92px;
+    transition-property: cursor, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        cursor: pointer;
+
+        .cliets__logo {
+            fill: var(--accent-color);
+
+        }
+    }
+}

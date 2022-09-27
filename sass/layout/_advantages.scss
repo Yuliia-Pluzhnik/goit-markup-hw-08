@@ -1,0 +1,31 @@
+.advantages {
+    display: flex;
+    column-gap: 30px;
+}
+
+.advantages__container {
+    @include flexCenter;
+    column-gap: 30px;
+    background-color: var(--background-color-grey);
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.advantages__item {
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+
+.advantages__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-color-text-theme-white);
+    margin-bottom: 10px;
+}
+
+.advantages__text {
+    font-size: 14px;
+    line-height: 1.71;
+}

@@ -1,0 +1,31 @@
+@import './utils/_variables.scss';
+@import './utils/_visually-hidden.scss';
+@import './utils/_mixin.scss';
+
+@import './base/_common.scss';
+@import './base/_section.scss';
+@import './base/_container.scss';
+
+@import './components/_logo.scss';
+@import './components/_menu.scss';
+@import './components/_contacts.scss';
+@import './components/_title.scss';
+@import './components/_button.scss';
+@import './components/_social-list.scss';
+@import './components/_adress.scss';
+@import './components/_social.links.scss';
+@import './components/_backdrop.scss';
+@import './components/_follow-form.scss';
+@import './components/_modal-window.scss';
+@import './components/_modal-form.scss';
+
+
+@import './layout/_header.scss';
+@import './layout/_hero.scss';
+@import './layout/_advantages.scss';
+@import './layout/_projects.scss';
+@import './layout/_comand.scss';
+@import './layout/_clients.scss';
+@import './layout/_footer.scss';
+@import './layout/_portfolio.scss';
+
