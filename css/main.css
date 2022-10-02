@@ -61,11 +61,18 @@ ul {
   padding-left: 0;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .container {
   max-width: 100%;
   padding-left: 15px;
@@ -195,6 +202,7 @@ ul {
   .mobile-menu__nav-list {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 32px;
   }
   .mobile-menu__nav-link {
@@ -205,6 +213,13 @@ ul {
     color: var(--primary-color-text-theme-white);
   }
   .mobile-menu__nav-link:hover, .mobile-menu__nav-link:focus {
+    color: var(--accent-color);
+  }
+  .mobile-menu__nav-link--current {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
     color: var(--accent-color);
   }
   .mobile-menu__contact-list {
@@ -230,6 +245,7 @@ ul {
   }
   .mobile-menu__social-list {
     display: flex;
+    flex-wrap: wrap;
   }
   .mobile-menu__social-link {
     padding: 0 10px;
@@ -384,13 +400,20 @@ ul {
 }
 .title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
   color: var(--primary-color-text-theme-white);
-  margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
 button {
   cursor: pointer;
   font-family: inherit;
@@ -595,7 +618,7 @@ button {
   display: block;
   background-color: var(--background-color);
   border: 0;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -663,7 +686,7 @@ button {
     margin-top: 20px;
   }
   .follow__input {
-    width: auto;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -682,6 +705,7 @@ button {
 @media screen and (min-width: 1200px) {
   .follow__container {
     display: flex;
+    flex-direction: row;
     column-gap: 12px;
     justify-content: center;
     align-items: center;
@@ -944,64 +968,42 @@ button {
   margin-bottom: 30px;
 }
 
+.hero {
+  width: 100%;
+  height: 100%;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin: 0 auto;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 767px) {
   .hero {
-    width: 100%;
-    height: 100%;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    margin: 0 auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mobile/background-img-mobile.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #c4c4c4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
     width: 100%;
     height: 100%;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    margin: 0 auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mobile/background-img-mobile@2x.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #c4c4c4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/tablet/background-image-tablet.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #c4c4c4;
-    margin: 0 auto;
-    padding-top: 120px;
-    padding-bottom: 120px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/tablet/background-image-tablet@2x.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #c4c4c4;
-    margin: 0 auto;
-    padding-top: 120px;
-    padding-bottom: 120px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1031,10 +1033,6 @@ button {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/desktop/backgroung-image-dsk@2x.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #c4c4c4;
   }
 }
 .advantages {
@@ -1059,6 +1057,7 @@ button {
   text-transform: uppercase;
   color: var(--primary-color-text-theme-white);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .advantages__text {

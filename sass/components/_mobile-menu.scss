@@ -54,6 +54,7 @@
         .mobile-menu__nav-list {
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
             gap: 32px;
         }
     
@@ -70,6 +71,15 @@
                 color: var(--accent-color)
             }
         }
+
+   .mobile-menu__nav-link--current {
+    font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+    
+        color: var(--accent-color);
+   }
     
         .mobile-menu__contact-list {
             margin-top: 300px;
@@ -100,6 +110,7 @@
     
         .mobile-menu__social-list {
             display: flex;
+            flex-wrap: wrap;
         }
     
         .mobile-menu__social-link {
