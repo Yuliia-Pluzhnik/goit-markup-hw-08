@@ -1,9 +1,40 @@
+@media screen and (max-width: 767px) {
+
+.open-mobile-menu-btn {
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.open-mobile-menu-btn__icon {
+    width: 40px;
+    height: 40px;
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
 .page-header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
 }
 
-.header-border {
-    border-bottom: solid 1px;
-    border-color: #ECECEC;
+@media screen and (min-width: 767px) {
+
+.open-mobile-menu-btn {
+    display: none;
+}
+}
+
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

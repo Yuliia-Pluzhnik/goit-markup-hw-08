@@ -1,11 +1,3 @@
-.follow__container {
-    display: flex;
-    column-gap: 12px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
 .follow__label {
     font-weight: 700;
     font-size: 14px;
@@ -36,17 +28,17 @@
     color: var(--primary-color-text-theme-dark);
 
     &::placeholder {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.25;
-            color: rgba(255, 255, 255, 0.6);
-        }
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
 
-                &:focus,
-                &:hover {
-                    border-color: var(--accent-color);
-                    outline: none;
-                }
+    &:focus,
+    &:hover {
+        border-color: var(--accent-color);
+        outline: none;
+    }
 }
 
 
@@ -71,12 +63,12 @@
     padding-right: 28px;
 
     &:hover,
-       &:focus {
-            background-color: #188CE8;
-            transition-property: background-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    &:focus {
+        background-color: #188CE8;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 
@@ -87,4 +79,50 @@
     top: 50%;
     transform: translateY(-50%);
     right: 28px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .follow__container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .follow__input {
+            width: auto;
+        }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .follow {
+        margin-top: 60px;}
+ 
+        .follow__container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+    }
+
+
+
+@media screen and (min-width: 1200px) {
+
+.follow__container {
+    display: flex;
+    column-gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 }
