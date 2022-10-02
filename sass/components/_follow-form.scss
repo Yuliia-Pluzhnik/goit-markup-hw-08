@@ -83,6 +83,10 @@
 
 
 @media screen and (max-width: 768px) {
+
+    .follow {
+        width: 100%;
+    }
     .follow__container {
             display: flex;
             flex-direction: column;
@@ -102,7 +106,9 @@
 @media screen and (min-width: 768px) {
 
     .follow {
-        margin-top: 60px;}
+        margin-top: 60px;
+        width: 450px;
+    }
  
         .follow__container {
             display: flex;
@@ -117,6 +123,11 @@
 
 
 @media screen and (min-width: 1200px) {
+
+    .follow {
+        margin-top: 0;
+            width: 570px;
+    }
 
 .follow__container {
     display: flex;

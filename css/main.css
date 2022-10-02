@@ -88,7 +88,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 740px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -503,6 +503,7 @@ button {
 
 @media screen and (max-width: 767px) {
   .adress__flex-container {
+    justify-content: space-between;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -538,6 +539,7 @@ button {
     display: flex;
     column-gap: 70px;
     align-items: baseline;
+    text-align: start;
   }
   .adress__list {
     margin-top: 20px;
@@ -677,6 +679,9 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  .follow {
+    width: 100%;
+  }
   .follow__container {
     display: flex;
     flex-direction: column;
@@ -692,6 +697,7 @@ button {
 @media screen and (min-width: 768px) {
   .follow {
     margin-top: 60px;
+    width: 450px;
   }
   .follow__container {
     display: flex;
@@ -703,6 +709,10 @@ button {
   }
 }
 @media screen and (min-width: 1200px) {
+  .follow {
+    margin-top: 0;
+    width: 570px;
+  }
   .follow__container {
     display: flex;
     flex-direction: row;
@@ -852,6 +862,7 @@ button {
   width: 16px;
   height: 15px;
   padding: 0;
+  flex-shrink: 0;
 }
 
 .checkbox-text-link {
@@ -957,6 +968,8 @@ button {
 }
 
 .hero__title {
+  max-width: 360px;
+  margin: 0 auto;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -1011,7 +1024,7 @@ button {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-image.jpg);
     background-size: cover;
     background-color: #C4C4C4;
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -1057,7 +1070,6 @@ button {
   text-transform: uppercase;
   color: var(--primary-color-text-theme-white);
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .advantages__text {
