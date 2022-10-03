@@ -48,7 +48,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px)
  height: 100%;
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(/images/mobile/background-img-mobile@2x.jpg);
+                url(../images/mobile/background-img-mobile@2x.jpg);
          
 
 }
@@ -58,7 +58,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px)
 .hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(/images/tablet/background-image-tablet.jpg);
+            url(../images/tablet/background-image-tablet.jpg);
 
     }
 
@@ -71,7 +71,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px)
     .hero {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(/images/tablet/background-image-tablet@2x.jpg);
+                url(../images/tablet/background-image-tablet@2x.jpg);
             
         }
     }
@@ -99,7 +99,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px)
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    width: 696px;
+    max-width: 696px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -112,5 +112,5 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(/images/desktop/backgroung-image-dsk@2x.jpg);}}
+            url(../images/desktop/backgroung-image-dsk@2x.jpg);}}
     
